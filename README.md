@@ -12,7 +12,7 @@ Use it at whatever level of automation you want:
   the recorded recipes through a real browser. Deterministic, no API key, no cost.
 - **Tier 2, your own LLM.** An MCP server (planned) exposing the catalogue and
   actions to any MCP client.
-- **Tier 3, agentic.** Let a coding agent operate the repo; see [`CLAUDE.md`](CLAUDE.md).
+- **Tier 3, agentic.** Let a coding agent operate the repo and run the maintenance and removals for you.
 
 Under the hood it's one async pipeline: discovery (registry scrape + OSINT crawl)
 feeds a candidate store, the scout turns candidates into verified opt-out recipes,
