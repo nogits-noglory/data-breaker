@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+build/
+dist/
+
+# Your own data stays local
+data/profile.yaml
+data/candidates.yaml
+data/queue.sqlite*
+data/screenshots/
+data/cc_steps/
+data/osint_findings.jsonl
+data/*.log
+data/cc_request.json
+data/cc_response.json
+data/cc_synth_request.json
+data/cc_synth_response.json
+
+# Editor / local
+.vscode/
+.claude/
+.vite/

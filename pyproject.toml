@@ -1,0 +1,26 @@
+[project]
+name = "databroker-pipeline"
+version = "0.1.0"
+description = "Async pipeline: registry scrape + crawl -> scout -> autonomous data-broker removal"
+requires-python = ">=3.11"
+dependencies = [
+    "pyyaml>=6",
+    "tldextract>=5",
+    "httpx>=0.27",
+    "mmh3>=4",
+]
+
+[project.optional-dependencies]
+# the browser deep-scout + live removal drivers
+browser = ["browser-use", "playwright", "anthropic"]
+
+[project.scripts]
+databroker = "cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["cli"]
+packages = ["databroker", "databroker.core", "databroker.stages"]

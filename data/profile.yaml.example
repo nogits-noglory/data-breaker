@@ -1,0 +1,16 @@
+# Copy to data/profile.yaml and fill in YOUR info. This stays on your machine.
+# You are your own agent: this is the data the opt-out forms ask for.
+user_id: self
+name: Jane Doe
+emails:
+  - jane@example.com
+phones:
+  - "555-123-4567"
+addresses:
+  - street: 123 Main St
+    city: Phoenix
+    state: AZ
+    zip: "85001"
+dob: "1990-01-01"
+regions:
+  - US
